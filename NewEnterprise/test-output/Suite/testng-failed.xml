@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
+  <test thread-count="5" name="Test(failed)">
+    <parameter name="browser" value="Chrome"/>
+    <classes>
+      <class name="org.Enterprise.TestCase.TestCase_ApplicationSetup">
+        <methods>
+          <include name="TestCaseApplicationSetup"/>
+          <include name="Verificatin"/>
+          <include name="setup"/>
+          <include name="GenerateReport"/>
+        </methods>
+      </class> <!-- org.Enterprise.TestCase.TestCase_ApplicationSetup -->
+      <class name="org.Enterprise.TestCase.TestCase_Visitors">
+        <methods>
+          <include name="TestCaseVisitors"/>
+          <include name="Verificatin"/>
+          <include name="GenerateReport"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- org.Enterprise.TestCase.TestCase_Visitors -->
+      <class name="org.Enterprise.TestCase.TestCase_RoomBooking">
+        <methods>
+          <include name="setup"/>
+          <include name="TestCaseRoomBooking"/>
+          <include name="Verificatin"/>
+          <include name="GenerateReport"/>
+        </methods>
+      </class> <!-- org.Enterprise.TestCase.TestCase_RoomBooking -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->
